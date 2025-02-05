@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMenu">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/title"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/our_menu"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-light"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:paddingHorizontal="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/cold_drinks"
+            android:background="@drawable/third_gradient"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/third_gradient"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/hot_drinks"
+            android:textSize="16sp"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/third_gradient"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/sweets"
+            android:textSize="16sp"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/third_gradient"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/salties"
+            android:textSize="16sp"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/third_gradient"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/combos"
+            android:textSize="16sp"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/third_gradient"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/custom"
+            android:textSize="16sp"
+            android:layout_margin="8dp"/>
+
+    </GridLayout>
+
+
+</LinearLayout>
