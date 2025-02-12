@@ -17,4 +17,5 @@
     <string name="salties">SALTIES</string>
     <string name="combos">COMBOS</string>
     <string name="custom">CUSTOM</string>
+    <string name="titulo">Titulo de la opcion</string>
 </resources>
