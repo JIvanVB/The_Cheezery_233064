@@ -18,6 +18,6 @@ class RegisterActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        findViewById<Button>(R.id.buttonSingIn).setOnClickListener { startActivity(Intent(this,ActivityMenu::class.java)) }
+        findViewById<Button>(R.id.buttonSingIn).setOnClickListener { startActivity(Intent(this,MenuActivity::class.java)) }
     }
 }
