@@ -9,6 +9,8 @@
     tools:context=".ProductoActivity">
 
     <ImageView
+        android:id="@+id/titulo"
+        android:contentDescription="@string/titulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/colddrinks"

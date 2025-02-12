@@ -19,8 +19,12 @@ class MenuActivity : AppCompatActivity() {
             insets
         }
 
-        findViewById<Button>(R.id.btnCD).setOnClickListener {
-            startActivity(Intent(this,ProductoActivity::class.java))
-        }
+        findViewById<Button>(R.id.btnCD).setOnClickListener{startActivity(Intent(this,ProductoActivity::class.java).putExtra("opcion",findViewById<Button>(R.id.btnCD).text.toString()))}
+        findViewById<Button>(R.id.btnHD).setOnClickListener{startActivity(Intent(this,ProductoActivity::class.java).putExtra("opcion",findViewById<Button>(R.id.btnHD).text.toString()))}
+        findViewById<Button>(R.id.btnSW).setOnClickListener{startActivity(Intent(this,ProductoActivity::class.java).putExtra("opcion",findViewById<Button>(R.id.btnSW).text.toString()))}
+        findViewById<Button>(R.id.btnSA).setOnClickListener{startActivity(Intent(this,ProductoActivity::class.java).putExtra("opcion",findViewById<Button>(R.id.btnSA).text.toString()))}
+        findViewById<Button>(R.id.btnCO).setOnClickListener{startActivity(Intent(this,ProductoActivity::class.java).putExtra("opcion",findViewById<Button>(R.id.btnCO).text.toString()))}
+        findViewById<Button>(R.id.btnCU).setOnClickListener{startActivity(Intent(this,ProductoActivity::class.java).putExtra("opcion",findViewById<Button>(R.id.btnCU).text.toString()))}
+
     }
 }
